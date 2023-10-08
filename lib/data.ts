@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import corpcommentImg from '@/public/corpcomment.png';
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -70,7 +70,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Ibtitex , Fes",
     description:
-      "During my 3-month internship at IBTITEX, I developed a planning management application, and now as a full-stack developer, I work as a freelancer with expertise in React, Next.js, TypeScript, Tailwind, Laravel, and SQL. I am open to full-time opportunities.",
+      "During my 4 month internship at IBTITEX, I developed a planning management application, and now as a full-stack developer, I work as a freelancer with expertise in React, Next.js, TypeScript, Tailwind, Laravel, and SQL. I am open to full-time opportunities.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
@@ -78,17 +78,17 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "IbtitexPlan",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I worked as a full-stack developer on this project for 4 month. Users can have all data easiest.",
+    tags: ["php", " laravel", "Symphony", "Bootstrap", "Mysql", "javascript"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "planningDash",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "An admin dashboard. It has features like filtering, sorting and pagination.",
+    tags: ["html", "JavaScript", "Bootstrap", "mysql", "php"],
     imageUrl: rmtdevImg,
   },
   {

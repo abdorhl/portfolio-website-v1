@@ -4,8 +4,12 @@ export default function Footer() {
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">
       <small className="mb-2 block text-xs">
-        &copy; 2030 Abdellatif Rhahli. All rights reserved.
+          <p>
+              Copyright &copy; 2023 All Rights Reserved.
+          </p>
+          <p>Made with <span>❤</span> by Abdelaltif Rhahli</p>
       </small>
+
       <p className="text-xs">
         {/*<span className="font-semibold">About this website:</span> built with*/}
         {/*React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,*/}
