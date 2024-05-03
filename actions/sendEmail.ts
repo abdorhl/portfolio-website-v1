@@ -5,13 +5,14 @@ import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 
-const resend = new Resend("re_BiDM3hBP_224LWm8jZVXeDbLrASCr4uhp");
+// Replace with your Resend project key (if applicable)
+const resend = new Resend("YOUR_RESEND_PROJECT_KEY");
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  // simple server-side validation
+  // Simple server-side validation
   if (!validateString(senderEmail, 500)) {
     return {
       error: "Invalid sender email",
@@ -27,7 +28,7 @@ export const sendEmail = async (formData: FormData) => {
   try {
     data = await resend.emails.send({
       from: "Contact Form <onboarding@resend.dev>",
-      to: "akapipaw@gmail.com",
+      to: "contacts@abdellatifrhahli.tech", // Replace with your email address
       subject: "Message from contact form",
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
