@@ -51,6 +51,14 @@ export const experiencesData = [
     date: "2020 - 2021",
   },
   {
+    title: "IT support specialistr",
+    location: "AS CROWN" , Fes",
+    description:
+      "During my 3 month internship at AS CROWN,  I provided technical assistance and support to end-users, troubleshooting hardware and software issues, and ensuring optimal system performance.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021",
+  },
+  {
     title: "Bachelor Of Science",
     location: "Sidi Mohamed Ben Abdellah University",
     description:
@@ -70,7 +78,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Ibtitex , Fes",
     description:
-      "During my 4 month internship at IBTITEX, I developed a planning management application, and now as a full-stack developer, I work as a freelancer with expertise in React, Next.js, TypeScript, Tailwind, Laravel, and SQL. I am open to full-time opportunities.",
+      "During my 6 month internship at IBTITEX, I developed a planning management application, and now as a full-stack developer, I work as a freelancer with expertise in React, Next.js, TypeScript, Tailwind, Laravel, and SQL. I am open to full-time opportunities.",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
@@ -108,8 +116,8 @@ export const skillsData = [
   "TypeScript",
   "React",
   "Laravel",
-  "Symfony",
-  "Next.js",
+  "DART",
+  "Flutter",
   "Node.js",
   "Git",
   "Tailwind",
