@@ -63,7 +63,11 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Abdellatif.</span> I'm a{" "}
-        <span className="font-bold">software developer and IT support specialist with a passion for building computers and developing applications</span>. I have a strong focus on Flutter, Python, Java, PHP, and React. My diverse skill set allows me to handle both front-end and back-end development, ensuring seamless integration and efficient performance. I thrive on solving complex problems and enjoy collaborating with teams to deliver high-quality software solutions.
+        <span className="font-bold">
+          software developer and IT support specialist.
+        </span>{" "}
+        I enjoy building computers and developing applications. My focus is on
+        Flutter, Python, Java, PHP, and React.
       </motion.h3>
 
       <motion.div
