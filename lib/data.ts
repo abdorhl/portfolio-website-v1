@@ -42,14 +42,14 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2020",
   },
-  {
-    title: "graduated bootcamp",
-    location: "FreeCodeCamp",
-    description:
-        "Completed a 300-hour training program (Computing withPython).",
-    icon: React.createElement(LuGraduationCap),
-    date: "2020 - 2021",
-  },
+  // {
+  //   title: "graduated bootcamp",
+  //   location: "FreeCodeCamp",
+  //   description:
+  //       "Completed a 300-hour training program (Computing withPython).",
+  //   icon: React.createElement(LuGraduationCap),
+  //   date: "2020 - 2021",
+  // },
   {
     title: "IT support specialistr",
     location: "AS CROWN" , Fes",
