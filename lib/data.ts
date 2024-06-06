@@ -50,14 +50,14 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     date: "2020 - 2021",
   },
-  // {
-  //   title: "IT support specialistr",
-  //   location: "AS CROWN" , Fes",
-  //   description:
-  //     "During my 3 month internship at AS CROWN,  I provided technical assistance and support to end-users, troubleshooting hardware and software issues, and ensuring optimal system performance.",
-  //   icon: React.createElement(CgWorkAlt),
-  //   date: "2021",
-  // },
+  {
+    title: "IT support specialistr",
+    location: "AS CROWN" , Fes",
+    description:
+      "During my 3 month internship at AS CROWN,  I provided technical assistance and support to end-users, troubleshooting hardware and software issues, and ensuring optimal system performance.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021",
+  },
   {
     title: "Bachelor Of Science",
     location: "Sidi Mohamed Ben Abdellah University",
@@ -72,7 +72,7 @@ export const experiencesData = [
     description:
       "study in Alx online course (Software Engineering Program).",
     icon: React.createElement(FaReact),
-    date: "2023",
+    date: "2023 - present",
   },
   {
     title: "Full-Stack Developer",
