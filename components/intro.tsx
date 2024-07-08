@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/img1.png"
+              src="/img1.jpg"
               alt="Abdellatif portrait"
               width="192"
               height="192"

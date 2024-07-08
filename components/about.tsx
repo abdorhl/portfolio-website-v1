@@ -19,7 +19,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Hello! I'm currently a third-year student at Sidi Mohammed Ibn Abdellah University, pursuing a degree in IT and mathematics. My journey into the world of software development has been quite unique. Unlike the traditional path of studying accounting, I've chosen to follow my passion for programming.
+        Hello! I recently graduated from Sidi Mohammed Ibn Abdellah University with a degree in Computer Science and mathematics. My journey into software development has been unique, instead of following the traditional path of studying accounting, I pursued my passion for programming.
       </p>
 
       <p>
