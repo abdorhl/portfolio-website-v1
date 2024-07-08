@@ -53,7 +53,7 @@ export const experiencesData = [
     date: "2020 - 2021",
   },
   {
-    title: "IT support specialistr",
+    title: "IT support specialiste",
     location: "AS CROWN,  Fes",
     description:
       "During my 3 month internship at AS CROWN,  I provided technical assistance and support to end-users, troubleshooting hardware and software issues, and ensuring optimal system performance.",
