@@ -7,6 +7,7 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import lhubImg from "@/public/Lhoooooooooobpa2.png";
 import defendozerappImg from "@/public/home.png";
+import eboImg from "@/public/ebureal.png";
 
 export const links = [
   {
@@ -64,7 +65,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Ibtitex , Fes",
     description:
-        "During my 6 month internship at IBTITEX, I developed a planning management application, and now as a full-stack developer, I work as a freelancer with expertise in React, Next.js, TypeScript, Tailwind, Laravel, and SQL. I am open to full-time opportunities.",
+        "During my 6 month internship at IBTITEX, I developed a planning management application, and I help to resolve a technical issues",
     icon: React.createElement(CgWorkAlt),
     date: "2023",
   },
@@ -72,29 +73,28 @@ export const experiencesData = [
     title: "Bachelor Of Science",
     location: "Sidi Mohamed Ben Abdellah University",
     description:
-        "the last year of the Mathematics and Computer Science program.",
+        "Graduated in Computer Science and Mathematics.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2024",
-  },
-  {
-    title: "software engineering",
-    location: "Alx , Holberton school",
-    description:
-      "study in Alx online course (Software Engineering Program).",
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
   },
 
 ] as const;
 
 export const projectsData = [
-    {
+  {
+    title: "EBO IPTV Platform",
+    description:
+        "This project showcases a modern and dynamic IPTV service landing page designed for EBO IPTV. The design features a sleek and futuristic layout, high-definition streaming across multiple devices. ",
+    tags: ["React", "vite", "Figma", "javascript", "Tailwind"],
+    imageUrl: eboImg,
+  },
+  {
   title: "DefenDozer App",
   description:
       "DefenDozer protects your device from malware threats using advanced detection models and real-time scanning to ensure data security.",
   tags: ["Flutter", "Dart", "Flask", "Python", "TFLite"],
   imageUrl: defendozerappImg,
-},
+  },
   {
     title: "IbtitexPlan",
     description:
