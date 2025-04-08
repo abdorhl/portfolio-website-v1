@@ -27,6 +27,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Certifications",
+    hash: "#certifications",
+  },
+  {
     name: "Experience",
     hash: "#experience",
   },
@@ -44,14 +48,6 @@ export const experiencesData = [
       "High School Diploma in Physical and Chemical Sciences.",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2020",
-  },
-  {
-    title: "graduated bootcamp",
-    location: "FreeCodeCamp",
-    description:
-        "Completed a 300-hour training program (Computing withPython).",
-    icon: React.createElement(LuGraduationCap),
-    date: "2020 - 2021",
   },
   {
     title: "IT support specialiste",
@@ -79,6 +75,28 @@ export const experiencesData = [
   },
 
 ] as const;
+
+// data.js
+export const certifications = [
+  {
+    title: "Certified React Developer",
+    issuer: "React Training",
+    date: "March 2025",
+    description: "An in-depth certification focusing on React fundamentals and advanced concepts.",
+    image: "./images/react-cert.png",
+    link: "https://www.reacttraining.com/certification"
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    issuer: "freeCodeCamp",
+    date: "January 2025",
+    description: "Covers fundamental algorithms and data structures in JavaScript.",
+    image: "./images/js-cert.png",
+    link: "https://www.freecodecamp.org/certification"
+  },
+  // Add more certifications as needed
+];
+
 
 export const projectsData = [
   {

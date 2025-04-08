@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -10,9 +10,43 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
+const roles = [
+  "I'm Abdellatif.",
+  "I'm a software developer,",
+  "and also IT support specialist.",
+];
+
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const [text, setText] = useState("");
+  const [subIndex, setSubIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+
+  const currentRole = roles[loopNum % roles.length];
+  const speed = deleting ? 40 : 100;
+
+  useEffect(() => {
+    if (subIndex === currentRole.length + 1 && !deleting) {
+      setTimeout(() => setDeleting(true), 1000);
+      return;
+    }
+
+    if (subIndex === 0 && deleting) {
+      setDeleting(false);
+      setLoopNum((prev) => prev + 1);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setText(currentRole.substring(0, subIndex));
+      setSubIndex(subIndex + (deleting ? -1 : 1));
+    }, speed);
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, deleting, currentRole]);
 
   return (
     <section
@@ -25,17 +59,14 @@ export default function Intro() {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
+            transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
               src="/img1.jpg"
               alt="Abdellatif portrait"
               width="192"
               height="192"
-              quality="95"
+              quality={95}
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
@@ -45,38 +76,42 @@ export default function Intro() {
             className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
+            transition={{ type: "spring", stiffness: 125, delay: 0.1 }}
           >
             👋
           </motion.span>
         </div>
       </div>
 
-      <motion.h3
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-      >
-        <span className="font-bold">Hello, I'm Abdellatif.</span> I'm a{" "}
+      {/* Typing text */}
+      <div className="mb-2 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+        <span className="font-bold">Hello, </span>
         <span className="font-bold">
-          software developer and IT support specialist.
-        </span>{" "}
-        I enjoy building computers and developing applications. My focus is on
-        Flutter, Python, Java, PHP, and React.
-      </motion.h3>
+          {text}
+          <span className="blinking-cursor">|</span>
+        </span>
+      </div>
 
+      {/* Static description */}
+      <motion.p
+        className="mb-10 mt-5 px-4 text-lg sm:text-xl text-gray-700 dark:text-white/80"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.2 }}
+      >
+        I enjoy building computers and developing applications.
+        <br />
+        I have a passion for technology and a strong desire to learn and grow in the field of software development.
+        
+      </motion.p>
+      
+
+      {/* Buttons */}
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 2.5, duration: 0.6, type: "spring" }}
       >
         <Link
           href="#contact"
