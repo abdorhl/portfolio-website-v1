@@ -8,6 +8,7 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 import lhubImg from "@/public/Lhoooooooooobpa2.png";
 import defendozerappImg from "@/public/home.png";
 import eboImg from "@/public/ebureal.png";
+import ibm from "@/public/ibm.png";
 
 export const links = [
   {
@@ -25,10 +26,6 @@ export const links = [
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Certifications",
-    hash: "#certifications",
   },
   {
     name: "Experience",
@@ -83,8 +80,24 @@ export const certifications = [
     issuer: "React Training",
     date: "March 2025",
     description: "An in-depth certification focusing on React fundamentals and advanced concepts.",
-    image: "./images/react-cert.png",
-    link: "https://www.reacttraining.com/certification"
+    link: "https://www.reacttraining.com/certification",
+    imageUrl: ibm,
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    issuer: "freeCodeCamp",
+    date: "January 2025",
+    description: "Covers fundamental algorithms and data structures in JavaScript.",
+    image: "@/public/Cisco_logo.png",
+    link: "https://www.freecodecamp.org/certification"
+  },
+  {
+    title: "JavaScript Algorithms and Data Structures",
+    issuer: "freeCodeCamp",
+    date: "January 2025",
+    description: "Covers fundamental algorithms and data structures in JavaScript.",
+    image: "./images/js-cert.png",
+    link: "https://www.freecodecamp.org/certification"
   },
   {
     title: "JavaScript Algorithms and Data Structures",
