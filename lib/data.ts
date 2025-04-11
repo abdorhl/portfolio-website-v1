@@ -212,12 +212,21 @@ export const skillsData = [
   "Bootstrap",
   "MongoDB",
   "C++",
-  "java",
+  "Java",
   "C",
   "Express",
   "mySQL",
   "Python",
   "Flask",
+  // Add new skills here
+  "Docker",
+  "Kubernetes",
+  "AWS",
+  "Terraform",
+  "Jenkins",
+  "Linux/Unix",
+  "Postman",
+  "Jira"
 ] as const;
 
 export const categorizedSkills = [

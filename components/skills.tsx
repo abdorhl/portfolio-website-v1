@@ -6,6 +6,9 @@ import { categorizedSkills, skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
+// Define skill type based on skillsData
+type Skill = typeof skillsData[number];
+
 const categoryAnimation = {
   initial: { opacity: 0, y: 50 },
   animate: { opacity: 1, y: 0 },
@@ -59,8 +62,11 @@ export default function Skills() {
             
             <ul className="flex flex-wrap justify-center gap-2">
               {category.skills.map((skill) => {
-                const originalIndex = skillsData.indexOf(skill);
-                return (
+                // Type assertion and index check
+                const typedSkill = skill as Skill;
+                const originalIndex = skillsData.indexOf(typedSkill);
+                
+                return originalIndex !== -1 ? (
                   <motion.li
                     className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 
                       cursor-default transition-shadow hover:shadow-lg dark:hover:bg-white/20"
@@ -74,10 +80,10 @@ export default function Skills() {
                     custom={originalIndex}
                   >
                     <span className="block transform transition-transform duration-200 hover:rotate-[5deg]">
-                      {skill}
+                      {typedSkill}
                     </span>
                   </motion.li>
-                );
+                ) : null;
               })}
             </ul>
           </motion.div>
