@@ -43,12 +43,12 @@ const itemAnimation = {
 };
 
 export default function Certifications() {
-  const { ref } = useSectionInView("Certifications");
+  
 
   return (
     <section
       id="certifications"
-      ref={ref}
+      
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Certifications</SectionHeading>
