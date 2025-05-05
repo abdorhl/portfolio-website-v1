@@ -82,20 +82,11 @@ export const certifications = [
   {
     title: "AWS Cloud Practitioner Essentials",
     issuer: "AWS SkillBuilder",
-    status: "inProgress",
+    status: "completed",
     estimatedCompletion: "Mai 2025",
     description: "Foundational understanding of AWS cloud services, core concepts, and best practices for technical and non-technical roles.",
     image: aws,
-    link: "https://explore.skillbuilder.aws/learn/courses/134/aws-cloud-practitioner-essentials"
-  },
-  {
-    title: "Penetration Testing, Threat Hunting, and Cryptography",
-    issuer: "IBM via Coursera",
-    status: "inProgress",
-    estimatedCompletion: "Mai 2025",
-    description: "Hands-on techniques for ethical hacking, threat detection methodologies, and cryptographic protocols for secure systems.",
-    image: ibm,
-    link: "https://www.coursera.org/learn/ibm-penetration-testing-threat-hunting-cryptography?irclickid=z55yG-xRcxycWfjxac1KIzH8Uksy4WSJJwiyRM0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=4194667&utm_content=b2c&utm_campaignid=WithSandra&utm_term=14726_SI_1164545_"
+    link: "/AWS Certificate.pdf"
   },
   {
     title: "Certified Ethical Hacker",
@@ -103,7 +94,7 @@ export const certifications = [
     date: "February 2025",
     status: "completed",
     description: "A certification in ethical hacking and penetration testing, covering core techniques for identifying and exploiting security vulnerabilities.",
-    link: "https://www.credly.com/badges/9704a5e5-d366-49ad-8936-e89a929b9fb7/public_url",
+    link: "/EthicalHacker.pdf",
     image: cisco,
   },
   {
@@ -111,11 +102,10 @@ export const certifications = [
     issuer: "IBM SkillsBuild",
     date: "March 2025",
     status: "completed",
-    description: "Covers fundamental  foundational concepts of artificial intelligence, including machine learning, neural networks, and real-world AI applications.",
+    description: "Covers fundamental foundational concepts of artificial intelligence, including machine learning, neural networks, and real-world AI applications.",
     image: ibm,
-    link: "https://www.credly.com/badges/2a5f4843-831a-4e05-bcf1-bda78fe38abe/public_url"
+    link: "/IBMDesign.pdf"
   },
-
   {
     title: "JavaScript Algorithms and Data Structures",
     issuer: "freeCodeCamp",
@@ -123,7 +113,7 @@ export const certifications = [
     status: "completed",
     description: "Covers fundamental algorithms and data structures in JavaScript.",
     image: freecodecamp,
-    link: "https://www.freecodecamp.org/certification"
+    link: "/JavaScript.pdf"
   },
   {
     title: "Digitale Privatsphäre: Wie schütze ich meine persönlichen Daten im Netz?",
@@ -132,7 +122,7 @@ export const certifications = [
     status: "completed",
     description: "Ein Grundlagenzertifikat über den Schutz persönlicher Daten im digitalen Raum, mit Fokus auf PII, Verschlüsselung, technische Schutzmaßnahmen und Datenschutzbewusstsein.",
     image: openhpi,
-    link: "https://open.hpi.de/courses/privatsphaere2024/certificates"
+    link: "/privatsphaere.pdf"
   },
   {
     title: "Operating Systems Basics",
@@ -141,7 +131,7 @@ export const certifications = [
     status: "completed",
     description: "Core concepts for managing operating systems in networked environments, covering resource allocation and basic system security.",
     image: cisco,
-    link: "https://www.credly.com/badges/2fb54981-3528-4840-bed3-0a95e3cf9959/public_url"
+    link: "/OperatingSystems.pdf"
   },
   {
     title: "Scientific Computing with Python",
