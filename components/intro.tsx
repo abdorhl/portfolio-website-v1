@@ -68,12 +68,12 @@ export default function Intro() {
               height="192"
               quality={95}
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-20 w-20 sm:h-24 sm:w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-3xl sm:text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ type: "spring", stiffness: 125, delay: 0.1 }}
@@ -84,7 +84,7 @@ export default function Intro() {
       </div>
 
       {/* Typing text */}
-      <div className="mb-2 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
+      <div className="mb-2 mt-4 px-4 text-xl sm:text-2xl md:text-4xl font-medium !leading-[1.5]">
         <span className="font-bold">Hello, </span>
         <span className="font-bold">
           {text}
@@ -94,28 +94,26 @@ export default function Intro() {
 
       {/* Static description */}
       <motion.p
-        className="mb-10 mt-5 px-4 text-lg sm:text-xl text-gray-700 dark:text-white/80"
+        className="mb-10 mt-5 px-4 text-base sm:text-lg md:text-xl text-gray-700 dark:text-white/80"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2 }}
       >
         I enjoy building computers and developing applications.
-        <br />
+        <br className="hidden sm:block" />
         I have a passion for technology and a strong desire to learn and grow in the field of software development.
-        
       </motion.p>
-      
 
       {/* Buttons */}
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-base sm:text-lg font-medium"
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 2.5, duration: 0.6, type: "spring" }}
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group bg-gray-900 text-white px-5 sm:px-7 py-2 sm:py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition w-full sm:w-auto justify-center"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -126,7 +124,7 @@ export default function Intro() {
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-5 sm:px-7 py-2 sm:py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 w-full sm:w-auto justify-center"
           href="/Abdellatif_Rhahli_Resume.pdf"
           download
         >
@@ -134,21 +132,23 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com/in/abdellatif-rhahli"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+        <div className="flex gap-2">
+          <a
+            className="bg-white p-3 sm:p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://linkedin.com/in/abdellatif-rhahli"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/abdorhl"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+          <a
+            className="bg-white p-3 sm:p-4 text-gray-700 flex items-center gap-2 text-[1.2rem] sm:text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/abdorhl"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
